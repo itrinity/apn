@@ -1,0 +1,91 @@
+#!/usr/bin/env ruby
+$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
+
+ARGV << '--help' if ARGV.empty?
+
+require 'optparse'
+require 'apn'
+require 'daemons'
+
+command = ARGV.shift
+
+options = {}
+OptionParser.new do |opts|
+  opts.banner = "Usage: apn [options]"
+
+  opts.on("--cert=MANDATORY", "Location of the cert pem file") do |cert|
+    options[:cert] = cert
+  end
+
+  opts.on("--password=OPTIONAL", "Password for the cert pem file") do |password|
+    options[:password] = password
+  end
+
+  opts.on("--redis_host=OPTIONAL", "Redis hostname") do |host|
+    options[:redis_host] = host
+  end
+
+  opts.on("--redis_port=OPTIONAL", "Redis port") do |port|
+    options[:redis_port] = port
+  end
+
+  opts.on("--redis_password=OPTIONAL", "Redis password") do |redis_password|
+    options[:redis_password] = redis_password
+  end
+
+  opts.on("--environment=OPTIONAL", "Specify sandbox or production") do |env|
+    if env == 'production'
+      options[:host] = 'gateway.push.apple.com'
+    else
+      options[:host] = 'gateway.sandbox.push.apple.com'
+    end
+  end
+
+  opts.on("--queue=OPTIONAL", "Name of the redis queue") do |queue|
+    options[:queue] = queue
+  end
+
+  opts.on("--foreground", "Run in the foreground") do |fore|
+    options[:foreground] = true
+  end
+
+  opts.on("--dir=OPTIONAL", "Directory to start in") do |dir|
+    options[:dir] = dir
+  end
+
+  opts.on("--logfile=OPTIONAL", "Logfile to log in") do |logfile|
+    options[:logfile] = logfile
+  end
+
+  opts.on("--airbrake=OPTIONAL", "Airbrake API key") do |airbrake|
+    options[:airbrake] = airbrake
+  end
+
+  opts.on('--help', 'Show help') do |help|
+    puts opts
+  end
+end.parse!
+
+case command
+  when 'start'
+    unless options[:foreground]
+      Daemons.daemonize(
+          :app_name => options[:queue],
+          :dir_mode => :normal,
+          :dir => "#{options[:dir]}/tmp/pids/",
+          :log_dir => "#{options[:dir]}/log",
+          :backtrace => true,
+          :log_output => true
+      )
+    end
+
+    APN::Daemon.new(options).run!
+  when 'stop'
+    unless options[:foreground]
+      files = Daemons::PidFile.find_files("#{options[:dir]}/tmp/pids/", options[:queue])
+      files.each do |file|
+        pid = File.open(file) {|h| h.read}.to_i
+        `kill -9 #{pid}`
+      end
+    end
+end

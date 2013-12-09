@@ -1,6 +1,6 @@
-# Apn
+# APN
 
-APN is a lightweight Apple Push Notification daemon for Ruby on Rails. APN works asynchronously using Redis and run as a daemon.
+APN is a lightweight Apple Push Notification daemon for Ruby on Rails. APN runs as a daemon and works asynchronously using Redis.
 
 ## Installation
 
@@ -21,7 +21,7 @@ Or install it yourself as:
 Run daemon by this command:
 
 ```
-Usage: apn start [options]
+Usage: apn start|stop [options]
     --cert=MANDATORY        Location of the cert pem file
     --password=OPTIONAL     Password for the cert pem file
     --dir=OPTIONAL          Directory to start in

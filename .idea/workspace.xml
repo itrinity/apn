@@ -2,33 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0044e0ee-7253-4582-93d4-a45b83a4d6b2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/apn/railtie.rb" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/apn.rb" afterPath="$PROJECT_DIR$/lib/apn.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/apn/version.rb" afterPath="$PROJECT_DIR$/lib/apn/version.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="apn.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386687705252" ignored="false" />
     <file path="/apn.rb" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386683866051" ignored="false" />
     <file path="/client.rb" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386675564025" ignored="false" />
-    <file path="/notification.rb" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386621553010" ignored="false" />
+    <file path="/notification.rb" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386690885823" ignored="false" />
     <file path="/daemon.rb" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386682860851" ignored="false" />
     <file path="/feedback.rb" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386621821594" ignored="false" />
     <file path="/log.rb" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386621831672" ignored="false" />
     <file path="/apn.gemspec" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386635907063" ignored="false" />
     <file path="/README.md" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386688855563" ignored="false" />
-    <file path="$PROJECT_DIR$/../liquidtalent/Gemfile" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386624612669" ignored="false" />
-    <file path="/Gemfile" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386636601401" ignored="false" />
+    <file path="$PROJECT_DIR$/../liquidtalent/Gemfile" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386690903334" ignored="false" />
+    <file path="/Gemfile" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386691030461" ignored="false" />
     <file path="/temp.rb" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386627448610" ignored="false" />
     <file path="$PROJECT_DIR$/../apn-test/app/controllers/users_controller.rb" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386679010097" ignored="false" />
     <file path="/users_controller.rb" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386678998540" ignored="false" />
     <file path="$PROJECT_DIR$/../apn-test/config/routes.rb" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386631733572" ignored="false" />
     <file path="/routes.rb" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386631732656" ignored="false" />
-    <file path="$PROJECT_DIR$/../apn-test/Gemfile" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386679219454" ignored="false" />
+    <file path="$PROJECT_DIR$/../apn-test/Gemfile" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386691032096" ignored="false" />
     <file path="/apn" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386687226197" ignored="false" />
     <file path="/version.rb" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386687340179" ignored="false" />
     <file path="/config.rb" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386634524096" ignored="false" />
     <file path="/notifier_daemon.rb" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386674133273" ignored="false" />
     <file path="$PROJECT_DIR$/../dnsniffer.com/script/notifier_daemon.rb" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386674133273" ignored="false" />
     <file path="/railtie.rb" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386683847437" ignored="false" />
+    <file path="$PROJECT_DIR$/../liquidtalent/app/models/notification.rb" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386690888743" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +55,7 @@
       <file leaf-file-name="apn.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/apn.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="29" selection-start="1173" selection-end="1173" vertical-scroll-proportion="0.0">
+            <state line="49" column="62" selection-start="1131" selection-end="1131" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -75,10 +79,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="version.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="version.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/apn/version.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="3" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0">
+            <state line="1" column="18" selection-start="29" selection-end="29" vertical-scroll-proportion="0.021306818">
               <folding />
             </state>
           </provider>
@@ -88,15 +92,6 @@
         <entry file="file://$PROJECT_DIR$/bin/apn">
           <provider selected="true" editor-type-id="text-editor">
             <state line="59" column="14" selection-start="1474" selection-end="1474" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="railtie.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/apn/railtie.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="4" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -120,10 +115,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="7" selection-start="1872" selection-end="1872" vertical-scroll-proportion="0.6960926">
+            <state line="69" column="7" selection-start="1872" selection-end="1872" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -165,11 +160,11 @@
         <option value="$PROJECT_DIR$/lib/apn/client.rb" />
         <option value="$PROJECT_DIR$/lib/apn/daemon.rb" />
         <option value="$PROJECT_DIR$/lib/apn/railtie.rb" />
-        <option value="$PROJECT_DIR$/lib/apn.rb" />
         <option value="$PROJECT_DIR$/bin/apn" />
         <option value="$PROJECT_DIR$/apn.gemspec" />
-        <option value="$PROJECT_DIR$/lib/apn/version.rb" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/lib/apn.rb" />
+        <option value="$PROJECT_DIR$/lib/apn/version.rb" />
       </list>
     </option>
   </component>
@@ -437,11 +432,11 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288948" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32756326" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25479144" sideWeight="0.6711052" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25479144" sideWeight="0.6724368" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -573,20 +568,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/apn/railtie.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="4" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/apn.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="29" selection-start="1173" selection-end="1173" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/apn/config.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="37" column="10" selection-start="679" selection-end="679" vertical-scroll-proportion="0.0">
@@ -615,16 +596,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/apn/version.rb">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="3" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0">
+        <state line="69" column="7" selection-start="1872" selection-end="1872" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/lib/apn.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="7" selection-start="1872" selection-end="1872" vertical-scroll-proportion="0.6960926">
+        <state line="49" column="62" selection-start="1131" selection-end="1131" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/apn/version.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="18" selection-start="29" selection-end="29" vertical-scroll-proportion="0.021306818">
           <folding />
         </state>
       </provider>

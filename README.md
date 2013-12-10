@@ -8,6 +8,9 @@ APN works asynchronously, queueing messages from Redis, so you will need to have
 
 [Installation guide for Redis server](http://redis.io/topics/quickstart)
 
+You will also need certificate file from Apple to be able to communicate with their server.
+There are many guides how to do that. Put your ```apn.pem``` certificate file from Apple to ```RAILS_ROOT/config/certs``` directory.
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -22,7 +25,7 @@ Or install it yourself as:
 
     $ gem install apn
 
-## Daemon Usage
+## Daemon usage
 
 Run daemon within your root Rails directory with this command:
 

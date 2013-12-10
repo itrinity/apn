@@ -47,3 +47,5 @@ module APN
     alias :config :configure
   end
 end
+
+require 'apn/railtie' if defined?(Rails)

@@ -58,14 +58,17 @@ OptionParser.new do |opts|
   end
 end.parse!
 
-pids_dir  = defined?(Rails) ? "#{::RAILS_ROOT}/tmp/pids" : "tmp/pids"
-log_dir   = defined?(Rails) ? "#{::RAILS_ROOT}/log" : "log"
+options[:queue] ||= 'apn_queue'
+options[:cert]  ||= defined?(Rails) ? "#{::Rails.root}/config/certs/apn.pem" : "config/certs/apn.pem"
+
+pids_dir  = defined?(Rails) ? "#{::Rails.root}/tmp/pids" : "tmp/pids"
+log_dir   = defined?(Rails) ? "#{::Rails.root}/log" : "log"
 
 case command
   when 'start'
     unless options[:foreground]
       puts "daemon" + Daemons.daemonize(
-          :app_name => 'apn',
+          :app_name => options[:queue],
           :dir_mode => :normal,
           :dir => pids_dir,
           :log_dir => log_dir,
@@ -79,7 +82,7 @@ case command
     APN::Daemon.new(options).run!
   when 'stop'
     unless options[:foreground]
-      files = Daemons::PidFile.find_files(pids_dir, 'apn')
+      files = Daemons::PidFile.find_files(pids_dir, options[:queue])
       files.each do |file|
         pid = File.open(file) {|h| h.read}.to_i
         `kill -9 #{pid}`

@@ -1,10 +1,12 @@
 require 'redis'
+require 'logger'
 require 'active_support/ordered_hash'
 require 'active_support/json'
 require 'base64'
 require 'apn/client'
+require 'apn/notification'
 require 'apn/config'
-require 'apn/log'
+#require 'apn/log'
 
 module APN
   class Daemon
@@ -34,8 +36,7 @@ module APN
         config.logfile = options[:logfile]
       end
 
-      @logger = APN::Log.new.write
-      @logger.info "Listening on queue: #{self.queue}"
+      APN.log(:info, "Listening on queue: #{self.queue}")
     end
 
     def run!
@@ -51,15 +52,15 @@ module APN
           end
         rescue Exception => e
           if e.class == Interrupt || e.class == SystemExit
-            @logger.info 'Shutting down...'
+            APN.log(:info, 'Shutting down...')
             exit(0)
           end
 
-          @logger.error "Encountered error: #{e}, backtrace #{e.backtrace}"
+          APN.log(:error, "Encountered error: #{e}, backtrace #{e.backtrace}")
 
-          @logger.info 'Trying to reconnect...'
+          APN.log(:info, 'Trying to reconnect...')
           client.connect!
-          @logger.info 'Reconnected'
+          APN.log(:info, 'Reconnected')
 
           client.push(@notification)
         end
@@ -68,7 +69,7 @@ module APN
 
     def send_notification
       if @last_notification.nil? || @last_notification < Time.now - 3600
-        @logger.info 'Forced reconnection...'
+        APN.log(:info, 'Forced reconnection...')
         client.connect!
       end
 

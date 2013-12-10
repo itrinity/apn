@@ -1,4 +1,4 @@
-module Rapnd
+module APN
   module Config
     extend self
 

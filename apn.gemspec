@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = APN::VERSION
   spec.authors       = ["Peter Hrbacik"]
   spec.email         = ["info@itrinity.com"]
-  spec.description   = 'APN is a lightweight Apple Push Notification daemon for Ruby on Rails. APN works asynchronously using Redis and run as a daemon.'
+  spec.description   = 'APN is a lightweight Apple Push Notification daemon for Ruby on Rails. APN runs as a daemon, works asynchronously using Redis and keeps persistent connection to Apple Push Notification Server.'
   spec.summary       = 'Asynchronous Apple Push Notification daemon'
   spec.homepage      = "http://github.com/itrinity/apn"
   spec.license       = "MIT"

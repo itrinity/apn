@@ -65,6 +65,14 @@ message = {:alert => 'This is a test from APN!', :badge => 16}
 APN.queue(message)
 ```
 
+If you want to run multiple instances, define ```queue``` for each one.
+
+```
+message = {:alert => 'This is a test from APN!', :badge => 16}
+queue   = 'apn_queue_1'
+APN.queue(message, queue)
+```
+
 ## Contributing
 
 1. Fork it

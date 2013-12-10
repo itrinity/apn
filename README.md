@@ -67,7 +67,7 @@ APN.queue(message)
 
 If you want to run multiple instances, define ```queue``` for each one.
 
-```
+```ruby
 message = {:alert => 'This is a test from APN!', :badge => 16}
 queue   = 'apn_queue_1'
 APN.queue(message, queue)

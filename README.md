@@ -30,6 +30,7 @@ Run daemon within your root Rails directory with this command:
 Usage: apn start|stop|run [options]
     --cert=MANDATORY        Location of the cert pem file
     --password=OPTIONAL     Password for the cert pem file
+    --queue=OPTIONAL        Name of the Redis queue
     --dir=OPTIONAL          Directory to start in (default root Rails dir)
     --logfile=OPTIONAL      Log file (default STDOUT)
     --help                  Show help
@@ -38,6 +39,15 @@ Usage: apn start|stop|run [options]
 You can use ```apn stop``` instead of start in order to kill a running daemon with the options you provide.
 
 ## Client usage
+
+```ruby
+require 'apn'
+
+message = {:alert => 'This is a test from APN!', :badge => 16}
+APN.queue(message)
+```
+
+If you want to configure APN, just add configuration block.
 
 ```ruby
 require 'apn'

@@ -2,6 +2,12 @@
 
 APN is a lightweight Apple Push Notification daemon for Ruby on Rails. APN runs as a daemon, works asynchronously using Redis and keeps persistent connection to Apple Push Notification Server.
 
+## Prerequisites
+
+APN works asynchronously, queueing messages from Redis, so you will need to have a running instance of the Redis server.
+
+[Installation guide for Redis server](http://redis.io/topics/quickstart)
+
 ## Installation
 
 Add this line to your application's Gemfile:

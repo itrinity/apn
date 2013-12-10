@@ -3,15 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0044e0ee-7253-4582-93d4-a45b83a4d6b2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apn.gemspec" afterPath="$PROJECT_DIR$/apn.gemspec" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/apn.iml" afterPath="$PROJECT_DIR$/.idea/apn.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/apn.rb" afterPath="$PROJECT_DIR$/lib/apn.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/apn" afterPath="$PROJECT_DIR$/bin/apn" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/apn/client.rb" afterPath="$PROJECT_DIR$/lib/apn/client.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/apn/config.rb" afterPath="$PROJECT_DIR$/lib/apn/config.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/apn/daemon.rb" afterPath="$PROJECT_DIR$/lib/apn/daemon.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/apn/version.rb" afterPath="$PROJECT_DIR$/lib/apn/version.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="apn.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,7 +14,7 @@
     <file path="/feedback.rb" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386621821594" ignored="false" />
     <file path="/log.rb" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386621831672" ignored="false" />
     <file path="/apn.gemspec" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386635907063" ignored="false" />
-    <file path="/README.md" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386680108540" ignored="false" />
+    <file path="/README.md" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386680474749" ignored="false" />
     <file path="$PROJECT_DIR$/../liquidtalent/Gemfile" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386624612669" ignored="false" />
     <file path="/Gemfile" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386636601401" ignored="false" />
     <file path="/temp.rb" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386627448610" ignored="false" />
@@ -122,7 +113,7 @@
       <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="186" selection-start="193" selection-end="193" vertical-scroll-proportion="0.04341534">
+            <state line="8" column="71" selection-start="412" selection-end="412" vertical-scroll-proportion="-0.1519537">
               <folding />
             </state>
           </provider>
@@ -624,7 +615,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="186" selection-start="193" selection-end="193" vertical-scroll-proportion="0.04341534">
+        <state line="8" column="71" selection-start="412" selection-end="412" vertical-scroll-proportion="-0.1519537">
           <folding />
         </state>
       </provider>

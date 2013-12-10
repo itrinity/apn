@@ -9,7 +9,7 @@ APN works asynchronously, queueing messages from Redis, so you will need to have
 [Installation guide for Redis server](http://redis.io/topics/quickstart)
 
 You will also need certificate file from Apple to be able to communicate with their server.
-There are many guides how to do that.
+There are many guides how to do that. Put your certificate from Apple in your ```RAILS_ROOT/config/certs``` directory.
 
 ## Installation
 
@@ -33,11 +33,11 @@ Run daemon within your root Rails directory with this command:
 Usage: apn start|stop|run [options]
     --cert_file=MANDATORY        Location of the cert pem file
     --cert_password=OPTIONAL     Password for the cert pem file
-    --redis_host=OPTIONAL   Redis hostname
-    --redis_port=OPTIONAL   Redis port
-    --queue=OPTIONAL        Name of the Redis queue
+    --redis_host=OPTIONAL        Redis hostname
+    --redis_port=OPTIONAL        Redis port
+    --queue=OPTIONAL             Name of the Redis queue
     --log_file=OPTIONAL          Log file (default STDOUT)
-    --help                  Show help
+    --help                       Show help
 ```
 
 You can use ```apn stop``` instead of start in order to kill a running daemon with the options you provide.

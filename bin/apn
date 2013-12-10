@@ -13,12 +13,12 @@ options = {}
 OptionParser.new do |opts|
   opts.banner = "Usage: apn [options]"
 
-  opts.on("--cert=MANDATORY", "Location of the cert pem file") do |cert|
-    options[:cert] = cert
+  opts.on("--cert_file=MANDATORY", "Location of the cert pem file") do |cert_file|
+    options[:cert] = cert_file
   end
 
-  opts.on("--password=OPTIONAL", "Password for the cert pem file") do |password|
-    options[:password] = password
+  opts.on("--cert_password=OPTIONAL", "Password for the cert pem file") do |cert_password|
+    options[:password] = cert_password
   end
 
   opts.on("--redis_host=OPTIONAL", "Redis hostname") do |host|
@@ -49,8 +49,8 @@ OptionParser.new do |opts|
     options[:dir] = dir
   end
 
-  opts.on("--logfile=OPTIONAL", "Logfile to log in") do |logfile|
-    options[:logfile] = logfile
+  opts.on("--log_file=OPTIONAL", "Logfile to log in") do |log_file|
+    options[:logfile] = log_file
   end
 
   opts.on('--help', 'Show help') do |help|
@@ -59,15 +59,14 @@ OptionParser.new do |opts|
 end.parse!
 
 options[:queue] ||= 'apn_queue'
-options[:cert]  ||= defined?(Rails) ? "#{::Rails.root}/config/certs/apn.pem" : "config/certs/apn.pem"
 
-pids_dir  = defined?(Rails) ? "#{::Rails.root}/tmp/pids" : "tmp/pids"
-log_dir   = defined?(Rails) ? "#{::Rails.root}/log" : "log"
+pids_dir  = "tmp/pids"
+log_dir   = "log"
 
 case command
   when 'start'
     unless options[:foreground]
-      puts "daemon" + Daemons.daemonize(
+      Daemons.daemonize(
           :app_name => options[:queue],
           :dir_mode => :normal,
           :dir => pids_dir,

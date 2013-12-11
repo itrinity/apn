@@ -18,12 +18,10 @@ module APN
       @password = options[:password]
       @host = options[:host]
       @port = options[:port]
-
-      @logger = APN::Log.new.write
     end
 
     def data
-      @logger.info 'Trying to get feedback from Apple push notification server...'
+      APN.log(:info, 'Trying to get feedback from Apple push notification server...')
 
       @feedback ||= receive
     end
@@ -34,7 +32,7 @@ module APN
         feedbacks << f
       end
 
-      @logger.info 'Feedback received!'
+      APN.log(:info, 'Feedback received!')
 
       return feedbacks
     end

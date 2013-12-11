@@ -72,6 +72,9 @@ message = {:alert => 'This is a test from APN!', :badge => 16}
 queue   = 'apn_queue_1'
 APN.queue(message, queue)
 ```
+## Feedback service
+You should periodically call the following feedback service to find out, to which devices you should stop sending notification (eg. they uninstall your app).
+
 
 ## Contributing
 

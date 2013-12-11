@@ -3,7 +3,6 @@ require 'apn/notification'
 require 'apn/config'
 require 'apn/feedback'
 require 'apn/client'
-#require 'apn/log'
 require 'apn/version'
 require 'redis'
 
@@ -38,7 +37,7 @@ module APN
     end
 
     def logfile
-      APN.config.logfile ? APN.config.logfile : STDOUT
+      APN.config.log_file ? APN.config.log_file : STDOUT
     end
 
     def configure

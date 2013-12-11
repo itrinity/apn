@@ -6,7 +6,6 @@ require 'base64'
 require 'apn/client'
 require 'apn/notification'
 require 'apn/config'
-#require 'apn/log'
 
 module APN
   class Daemon
@@ -33,7 +32,7 @@ module APN
       @dir = options[:dir]
 
       APN.configure do |config|
-        config.logfile = options[:logfile]
+        config.log_file = options[:logfile]
       end
 
       APN.log(:info, "Listening on queue: #{self.queue}")

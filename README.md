@@ -73,7 +73,7 @@ queue   = 'apn_queue_1'
 APN.queue(message, queue)
 ```
 ## Feedback service
-You should periodically call the following feedback service to find out, to which devices you should stop sending notification (eg. they uninstall your app).
+You should periodically call the following feedback service to find out, to which devices you should stop sending notifications (eg. they uninstall your app).
 
 ```ruby
     require 'apn'

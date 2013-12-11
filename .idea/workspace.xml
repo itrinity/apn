@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0044e0ee-7253-4582-93d4-a45b83a4d6b2" name="Default" comment="" />
+    <list default="true" id="0044e0ee-7253-4582-93d4-a45b83a4d6b2" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+    </list>
     <ignored path="apn.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386787737356" ignored="false" />
@@ -12,7 +14,7 @@
     <file path="/feedback.rb" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386621821594" ignored="false" />
     <file path="/log.rb" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386621831672" ignored="false" />
     <file path="/apn.gemspec" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386635907063" ignored="false" />
-    <file path="/README.md" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386788296875" ignored="false" />
+    <file path="/README.md" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386790281282" ignored="false" />
     <file path="$PROJECT_DIR$/../liquidtalent/Gemfile" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386691790743" ignored="false" />
     <file path="/Gemfile" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386691521727" ignored="false" />
     <file path="/temp.rb" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386627448610" ignored="false" />
@@ -84,10 +86,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="version.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="version.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/apn/version.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="18" selection-start="29" selection-end="29" vertical-scroll-proportion="0.021306818">
+            <state line="1" column="18" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -120,10 +122,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="157" selection-start="2167" selection-end="2167" vertical-scroll-proportion="0.0">
+            <state line="82" column="38" selection-start="2324" selection-end="2324" vertical-scroll-proportion="0.37047756">
               <folding />
             </state>
           </provider>
@@ -165,11 +167,11 @@
         <option value="$PROJECT_DIR$/bin/apn" />
         <option value="$PROJECT_DIR$/apn.gemspec" />
         <option value="$PROJECT_DIR$/lib/apn/feedback.rb" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/lib/apn/config.rb" />
         <option value="$PROJECT_DIR$/lib/apn/daemon.rb" />
         <option value="$PROJECT_DIR$/lib/apn.rb" />
         <option value="$PROJECT_DIR$/lib/apn/version.rb" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -543,13 +545,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="157" selection-start="2167" selection-end="2167" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/apn/config.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="16" selection-start="618" selection-end="618" vertical-scroll-proportion="0.0">
@@ -601,7 +596,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/apn/version.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="18" selection-start="29" selection-end="29" vertical-scroll-proportion="0.021306818">
+        <state line="1" column="18" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="38" selection-start="2324" selection-end="2324" vertical-scroll-proportion="0.37047756">
           <folding />
         </state>
       </provider>

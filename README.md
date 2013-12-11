@@ -75,6 +75,27 @@ APN.queue(message, queue)
 ## Feedback service
 You should periodically call the following feedback service to find out, to which devices you should stop sending notification (eg. they uninstall your app).
 
+```ruby
+    require 'apn'
+
+    APN.configure do |config|
+      config.cert_file = '/RAILS_ROOT/config/certs/apn.pem'
+      config.cert_password = 'password'
+      config.log_file = '/RAILS_ROOT/log/apn.log'
+    end
+
+    feedback_data = APN::Feedback.new().data
+
+    feedback_data.each do |item|
+      user = User.find_by_device_token( item.token )
+
+      if user.device_token_updated_at && user.device_token_updated_at > item.timestamp
+        return true
+      else
+        user.update_attributes(device_token: nil, device_token_updated_at: Time.now)
+      end
+    end
+```
 
 ## Contributing
 

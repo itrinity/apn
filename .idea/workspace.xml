@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0044e0ee-7253-4582-93d4-a45b83a4d6b2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/apn/log.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/apn.rb" afterPath="$PROJECT_DIR$/lib/apn.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/apn/config.rb" afterPath="$PROJECT_DIR$/lib/apn/config.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/apn/daemon.rb" afterPath="$PROJECT_DIR$/lib/apn/daemon.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/apn/feedback.rb" afterPath="$PROJECT_DIR$/lib/apn/feedback.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/apn/version.rb" afterPath="$PROJECT_DIR$/lib/apn/version.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="0044e0ee-7253-4582-93d4-a45b83a4d6b2" name="Default" comment="" />
     <ignored path="apn.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386787737356" ignored="false" />
@@ -25,11 +16,11 @@
     <file path="$PROJECT_DIR$/../liquidtalent/Gemfile" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386691790743" ignored="false" />
     <file path="/Gemfile" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386691521727" ignored="false" />
     <file path="/temp.rb" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386627448610" ignored="false" />
-    <file path="$PROJECT_DIR$/../apn-test/app/controllers/users_controller.rb" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386679010097" ignored="false" />
-    <file path="/users_controller.rb" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386788714294" ignored="false" />
+    <file path="$PROJECT_DIR$/../apn-test/app/controllers/users_controller.rb" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386789849718" ignored="false" />
+    <file path="/users_controller.rb" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386789845692" ignored="false" />
     <file path="$PROJECT_DIR$/../apn-test/config/routes.rb" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386631733572" ignored="false" />
     <file path="/routes.rb" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386631732656" ignored="false" />
-    <file path="$PROJECT_DIR$/../apn-test/Gemfile" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386691307441" ignored="false" />
+    <file path="$PROJECT_DIR$/../apn-test/Gemfile" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386789124007" ignored="false" />
     <file path="/apn" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386687226197" ignored="false" />
     <file path="/version.rb" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386687340179" ignored="false" />
     <file path="/config.rb" changelist="0044e0ee-7253-4582-93d4-a45b83a4d6b2" time="1386788754907" ignored="false" />
@@ -448,7 +439,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.259301" sideWeight="0.6724368" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.259301" sideWeight="0.6724368" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />

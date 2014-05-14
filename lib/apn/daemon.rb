@@ -14,7 +14,7 @@ module APN
     def initialize(options = {})
       options[:redis_host]  ||= 'localhost'
       options[:redis_port]  ||= '6379'
-      options[:host]        ||= 'gateway.sandbox.push.apple.com'
+      options[:host]        ||= 'gateway.push.apple.com'
       options[:port]        ||=  2195
       options[:queue]       ||= 'apn_queue'
       options[:password]    ||= ''
